@@ -18,10 +18,10 @@ namespace BlazorSSO_MIP.Services
                 // var myusername = "freanc";
                 //var myappId = "app1";
 
-                var myusername = "frederic@programq4u.onmicrosoft.com";
-                var myappId = "6c5d8069-ad47-4e99-b8a6-d8be585147fd";
+                //var myusername = "frederic@programq4u.onmicrosoft.com";
+                //var myappId = "76f38104-dd57-4eea-bc05-1251bb7edf60";
 
-                var response = await _httpClient.PostAsync($"https://ownidpfa.azurewebsites.net/api/token?username={myusername}&appId={myappId}", null);
+                var response = await _httpClient.PostAsync($"https://ownidpfa.azurewebsites.net/api/token?username={username}&appId={appId}", null);
 
                 response.EnsureSuccessStatusCode();
 

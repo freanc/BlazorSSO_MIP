@@ -24,6 +24,7 @@ builder.Services.AddMsalAuthentication(options =>
 // Custom IDP Token Service
 builder.Services.AddScoped<TokenService>();
 
+builder.Services.AddScoped<ClaimsService>();
 
 
 
